@@ -12,3 +12,15 @@
 ```
 
 - grep keywords from a dictionary file
+
+## Parameters
+
+- `${token}`
+    - The keyword being entered
+    - `\k\+$`
+    - with [iskeyword](http://vimdoc.sourceforge.net/htmldoc/options.html#'iskeyword')
+
+- `${filetype}`
+    - The filetype of the current buffer
+    - `&filetype`
+    - [filetype](http://vimdoc.sourceforge.net/htmldoc/options.html#'filetype')

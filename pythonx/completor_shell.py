@@ -21,6 +21,8 @@ class Shell(Completor):
         candidates = []
 
         token = self.input_data.split()[-1]
+        adjust_token = vim.Function('completor_shell#adjust_token')
+        token = adjust_token(token)
 
         for command in commands:
             try:
